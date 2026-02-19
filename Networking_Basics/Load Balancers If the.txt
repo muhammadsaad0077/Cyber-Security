@@ -1,0 +1,28 @@
+Load Balancers:
+If the website traffic is high then one server can't manage it, then our call goes to load balancer and it 
+then check which server is least busy (by running some algorithm like robin round ) and then transfer request to that server. Load balancer also check server health by periodically sending request to the server
+
+
+CDN - Content Delivery Network
+It is a excellent resource to manage traffic of busy website by putting its static files like js, css, images, videos on the thousands of the server all over the world, when
+user request those files CDN look in nearest server and respond to the user
+
+
+WAF - Web Application Firewall
+It is between the client and the web server, it avoid web server from common web attacks and also for rate limiting which ensures each IP address can make limited call to the server in a second, it 
+drops malicious request
+
+
+Web Server
+web server software:- Apache, nginx, Node JS
+
+Virtual Hosts
+You can host multiple website on the web server, it recognize the requested domain name from virtual host (that actually are configuration files ). If server finds a match then it respond with that web server address, if not then default website will be provided
+
+
+Static and Dynamic Content:
+Static example include images, video, JS, CSS
+
+Dynamic example include your blog website content on the homepage, if new blog is added then it will be changes. Also the search bar example 
+
+

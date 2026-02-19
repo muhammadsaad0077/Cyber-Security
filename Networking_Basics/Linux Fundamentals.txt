@@ -1,0 +1,70 @@
+Linux Fundamentals
+
+- find command: It find the file in your all directories
+
+find -name vpn.txt   (means that find that file whose name is vpn.txt  and if available it return the path of that file )
+
+
+- grep command: search the words inside the files
+grep "hello" *.txt
+
+grep "hello" example.txt
+
+-  & : to run the commands in background like copying a large file
+
+-  && : to run multiple commands
+
+-  >  :   echo "hello world"  > file.txt
+create the file and save hello world in it and overwrite all the content in file if have before
+
+
+-  >>  : append the text instead of overwriting
+
+
+
+connecting by ssh
+
+ssh tryhackme@IPAddress
+
+
+ls -a  to see hidden folder/files also
+
+ls -l  to see the detailed of the files including who own it
+
+User 
+
+su   to switch user
+
+/etc
+contain the sudoers file and the user/groups that have which permission
+
+wget  - to download files
+
+
+scp  - use to transfer files/directories from one remotely connected computer to your own and vice versa
+
+
+python3 -m http.server
+
+
+ps aux  -  to see all the processes including running from other user
+
+kill  - to kill process
+
+apropos keyword  - to search for a specific command by searching its action
+
+
+Foreground and background process:
+foreground process are what you seen in the terminal instantly like echo and background process are keep running until they are terminated, we can do ctrl z to suspend a process for a while (it will still be process you can check by doing ps ) to activate it again you can do fg
+
+
+iiitb.ac.in
+
+
+Crontab:
+
+It is use to schedule a task for the future, you have to provide it date, day. hour, second and what command to execute.
+crontab generator
+
+
+All the logs are in the /var/log 

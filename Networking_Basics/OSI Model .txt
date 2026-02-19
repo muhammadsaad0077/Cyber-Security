@@ -1,0 +1,54 @@
+OSI Model
+Open systems interconnection model
+
+has 7 layers
+
+- Application
+Users interact with, GUI
+
+
+- Presentation
+Act as a translator so the devices have different software/hardware can receive the same information
+
+- Session
+When two user on the same page a session is created and it synchronizes the two user to be on the same page before data is send or received.
+
+
+- Transport
+helps in transmitting data across a network
+
+When data is sent between two devices it follows the two protocol - TCP and UDP
+
+TCP - Transmission control protocol 
+ensures reliability between the connection, incorporates error checking into its design, guarantee the accuracy of the data
+
+if one chunk of data is not received then entire block of data can't be made, slower than UDP
+usually used in file sharing, internet browsing and email.
+
+UDP - User Datagram Protocol
+does not reliable as TCP
+much faster 
+
+Useful for discovering devices (DHCP, ARP), video streaming
+
+
+_ Network Layer
+Where magic of routing & re-assembly of data takes place, routing also determines the optimal path for data sharing
+
+Decision takes at this layer are
+ - What path is the shortest
+ - What path is the most reliable 
+ - Which path has the faster physical connection
+ 
+ 
+ - Data Link Layer
+ focuses on physical transmission of the data 
+ 
+ - Physical Layer
+ include hardware to make connection possible
+ 
+ 
+ Port forwarding:
+ - Port forwarding is configured at the router of the network, and it shares the local address to the public so everyone can use it.
+ 
+ 

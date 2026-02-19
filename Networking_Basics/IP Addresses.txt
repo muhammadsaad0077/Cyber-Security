@@ -1,0 +1,106 @@
+
+
+IP Addresses - 2:-   (Also there is my article on medium for 1st part but generally the things are cover here also)
+
+Let's say
+IP Address 192.168.1.3
+
+Subnet 255.255.255.0
+
+Default Gateway: 192.168.1.1
+
+Now the subnet here shows that three octets (network portion) will always remain same for every device connected within network and 4th octet will be unique.
+
+And suppose that 3 to 4 devices are connected in a network, first device share a img and its destination ip address is 192.168.1.5, by looking at three octets your device will know that
+it is the device in my network and share that information to the device.
+
+but if the destination ip address is something 132.12.3.2 then device will go to default gateway (your router) and then router continue this further communication.
+
+192.168.1.0 (first address, This address identifies the network itself)    192.168.1.1  (default gateway)    192.168.1.255 (broadcast Address, it will share the packets to each device on a subnet) these addresses cannot be used by any device within a network, kind of like a reserved addresses. 
+
+
+IP addresses are further divided into the different classes A, B, C, D, E, 127.0.0.1 (Subnet 255.0.0.0 ) are loop back addresses, they are kind of for testing our network.
+CLASS A Subnet 255.0.0.0
+CLASS A Subnet 255.255.0.0
+CLASS A Subnet 255.255.255.0
+
+- IP Address related questions
+
+so its mean now ipv6 are used but we always seen address in 145.231.233.1 ?
+
+Short answer: Yes, IPv6 is used today, but IPv4 is still everywhere, which is why you mostly see addresses like 145.231.233.1.
+
+Let’s clear it step-by-step.
+
+1️⃣ Why do we still see IPv4 addresses?
+
+Even though IPv6 exists:
+
+✅ IPv4 is still the default face of the internet
+
+Most websites
+
+Many apps
+
+Many networks
+still support IPv4 because:
+
+Old systems depend on it
+
+It’s simpler
+
+Replacing everything is expensive
+
+So your browser often shows:
+
+145.231.233.1   ← IPv4
+
+2️⃣ Is IPv6 actually being used right now?
+
+👉 YES, silently in the background
+
+An IPv6 address looks like:
+
+2405:201:600a:1c3a:8c2e:91ff:fe3a:7b21
+
+
+You don’t see it because:
+
+Apps hide it
+
+Tools prefer IPv4 when both are available
+
+This is called Dual Stack.
+
+3️⃣ Dual Stack (MOST IMPORTANT CONCEPT)
+
+Your device usually has both:
+
+IPv4 address ✅
+
+IPv6 address ✅
+
+When you visit a website:
+
+Device checks: IPv6 available?
+
+If yes → use IPv6
+
+If not → fall back to IPv4
+
+📌 You see IPv4, but IPv6 may still be used.
+
+4️⃣ NAT makes IPv4 look alive (but it’s not)
+
+Millions of users share one IPv4 public address using NAT.
+
+Example:
+
+Your phone      → 192.168.1.10
+Your laptop    → 192.168.1.11
+Public IP      → 145.231.233.1
+
+
+👉 That 145.231.233.1 might be shared by hundreds of users.
+
+(Basically through NAT and port ipv4 is still available).

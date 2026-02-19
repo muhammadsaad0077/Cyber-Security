@@ -1,0 +1,82 @@
+DNS
+
+Make communication possible on internet, we don't have to remember IP addresses we only need to remember URL and it automatically converts the url into the
+required IP address.
+
+TLD: top level domain
+.com , .gov , .org , .edu
+
+
+Second level domain: 
+google  , youtube , tryhackme
+
+Subdomain
+admin.tryhackme.com
+
+
+Domain record types are different kinds of entries stored in the DNS (Domain Name System) that tell the internet how to handle requests for a domain (like where to send website traffic, emails, etc.).
+
+In simple words:
+They are instructions that tell the internet “what should happen when someone uses this domain name.”
+
+For example, when you type a website name, DNS records help convert it into the server’s IP address and tell services like email where to go.
+
+Most Common Domain (DNS) Record Types
+ 1. A Record (Address)
+
+Maps domain → IPv4 address
+
+Example: example.com → 192.168.1.1
+
+This is the most basic and common record.
+
+ 2. AAAA Record
+
+Same as A record but for IPv6 address.
+
+ 3. CNAME (Canonical Name)
+
+Makes one domain an alias of another domain
+
+Example: www.example.com → example.com
+
+ 4. MX (Mail Exchange)
+
+Tells where emails for the domain should go
+
+Can include priority if multiple mail servers exist.
+
+ 5. TXT Record
+
+Stores text info (often for verification or email security like SPF/DKIM).
+
+ 6. NS (Name Server)
+
+Tells which DNS servers are authoritative for the domain.
+
+
+What happens when you make a DNS request
+- first it looks into your router cache
+- if not found then it looks in recursive server which is provided by the ISP
+- if there not found then it connect your device to Root DNS Servers then it redirects to the Authoritative DNS Server which have all the records
+
+
+More on HTTP/HTTPS
+
+- request
+- response
+
+methods
+- get
+- post
+- put
+- delete
+
+status code
+100 - 199  Information response 
+200 - 299  Success
+300 - 399 Redirection
+400 - 499 Client Errors
+500 - 599 Server Errors
+
+

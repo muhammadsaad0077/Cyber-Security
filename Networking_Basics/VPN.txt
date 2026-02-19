@@ -1,0 +1,36 @@
+VPN:
+
+Virtual Private network. 
+
+Your device encrypts traffic and sends it to the VPN server via the router and ISP; the VPN server then forwards it to the actual destination on your behalf.
+
+While using vpn we are using the private network line not public so its make a connection fast or not ? can using vpn impact the communication speed ?
+
+Yes it impact the speed but in a negative way. Using vpn slows down your communication because of extra layer and extra destination. Its seems faster because normally ISP do throttling but while on vpn
+we avoided from that ISP throttling and sends the packets to the next server quickly.
+
+
+A VPN does NOT replace the public internet.
+
+Your traffic still travels over:
+
+Your Wi-Fi
+
+Your ISP
+
+The public internet backbone
+
+VPN only creates a logical (virtual) private tunnel
+
+The physical path is still public infrastructure
+
+So:
+
+Private = encrypted tunnel, not a private cable
+
+Suppose the big company has all its data on its own server in the company and there are employees from different countries. Now the company use VPN to access that server in this case and internet serve as wire to transfer that data from company to employee and vice versa.
+
+
+SSH: Secure Shell
+Its a secure protocol that use to access and control other network remotely. Mean you can access it through terminal and its a secured/encrypted connection.
+It is often used to log into remote servers, manage linux servers, run command remotely, transfer files, port forwardding

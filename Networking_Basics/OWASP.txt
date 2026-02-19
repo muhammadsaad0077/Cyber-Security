@@ -1,0 +1,16 @@
+OWASP: List of most critical web application security risks published by OWASP ( Open Worldwide Application Security Project ). Its widely used
+by developers, security engineers and cybersecurity students 
+
+
+IAAA : 
+Identity - the unique account (e.g., user ID/email) that represents a person or service.
+
+Authentication - proving that identity (passwords, OTP, passkeys).
+
+Authorisation - what that identity is allowed to do.
+
+Accountability - recording and alerting on who did what, when, and from where.
+
+
+A04 Cryptographic Failure:-
+Cryptographic failures happen when sensitive data isn't adequately protected due to lack of encryption, faulty implementation, or insufficient security measures. This includes storing passwords without hashing, using outdated or weak algorithms (such as MD5, SHA1, or DES), exposing encryption keys, or failing to secure data during transmission.

@@ -1,0 +1,69 @@
+Firewall:
+
+It is a hardware or a software that monitor the incoming and out-coming traffic based on security rules.
+
+
+What a Firewall Normally Does (Without VPN)
+
+Firewall checks things like:
+
+Destination IP 
+
+Port number 
+
+Protocol (HTTP, FTP, SSH, etc.)
+
+Sometimes application data (DPI)
+
+Example:
+
+You → Facebook → Port 443
+Firewall → "Facebook is blocked ❌"
+
+
+➡ Blocked.
+
+What Changes When You Use a VPN
+
+When VPN is ON:
+
+You → VPN Server (encrypted) → Facebook
+
+What the firewall sees:
+
+Destination: VPN server IP
+
+Port: 443 (HTTPS)
+
+Data: Encrypted
+
+What the firewall CANNOT see:
+
+Which website you are visiting
+
+Which app you are using
+
+What data you are sending
+
+So firewall thinks:
+
+“Oh, this is just normal HTTPS traffic 😄”
+
+Types:
+
+1- Packet Filtering Firewall: First gen, basic firewall, examine basic packet info
+cons: limited context, vulnerable to spoofing, no application awareness
+
+2- Stateful inspection firewall: Second gen, maintain a state table to track active connections. Allows legitimate ( meaning that it first time check your id, next time allow you without checking id because it
+remember who has visited before ) return traffic automatically.
+
+3- Proxy Firewalls (Application-Level Gateways - Third Gen): It does a deep packet inspection, works on the application layer, examine the packet deeply that which information it contain, from where it is coming,
+where it going, what it contain, is it contain something that is on the denied list, if all okay then transfer to the destination.
+
+Cons: Performance overhead (latency), application-specific
+
+4- Next generation firewalls: Combine traditional functions with advanced features like IPS(intrusion provision system), application control, and threat intelligence.
+Cons: more complex, higher cost
+
+Limitations
+Can be bypassed by APTs/zero-days

@@ -1,0 +1,56 @@
+Preserving Privacy
+
+Web browsing history
+Logs: When you visit any website its server keep a record of it containing your ip address, request data, time date, referer (url which from you came to the website e.g from google)etc
+
+For example you searched for a cat and then go any of the website then www.google.com/search?q=cat will be shared as referer to the other website. This all shared in http headers
+
+If website is using this tag <meta name="referrer" content="origin"> then only www.google.com will be shared as referer.
+
+<meta name="referrer" content="none">   nothing will be shared as origin to protect the privacy of the users
+
+
+Fingerprinting: It is a technique to identify the users through its request.
+useragent: this is also shared in http header that contain the infomation about your browser and operating system.
+fonts, screen resolution, time also accessed be the server to fingerprint you
+
+Session cookies: it is string that server sends to client that result in helping the server to remember the same client and maintain the session, It is for limited time
+
+Tracking cookies: these cookies track the overall behavior of the user 
+
+set-cookie: -ga=GA1.2.0184853.2; max-age=63072000 (means that it will be valid for 2 years)
+tracking parameters: these send in your url while requesting for some website, e.g you visit some ad from facebook then the campaign id will be added in url and also the source as facebook will be added in the url
+
+Third party cookies:
+news.com  → loads ads from ads.google.com
+blog.com  → loads ads from ads.google.com
+
+Google’s ad server recognizes the same user on both sites
+
+only google knows in this case that you visit both websites, but news and blog website don't know that you visit both of them
+
+
+privacy based browser: safari, firefox, duckduckgo, brave
+
+Supercookies: These are injected by the third party. If you are using http then they play the crucial role like you are in the coffee shop and using their wifi they can see your request and
+inject ads between your connection. But if you are using https then you are safe from this 
+
+DNS:
+This remember the IP address and convert the domain name to the IP address and make connection possible.
+
+When you make request to the DNS server it is not encrypted and your ISP can see which website you are visiting
+
+
+DNS over HTTPS:
+This makes the request encrypted even not ISPs.
+
+
+DNS over TLS:
+This makes the request encrypted even not ISPs.
+
+
+Tor:
+It sends your packet from different sources and encrypt it at least 3 times
+
+Permissions
+

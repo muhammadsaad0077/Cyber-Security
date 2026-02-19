@@ -1,0 +1,28 @@
+Securing System:
+
+Phising attack
+
+Code Injection:
+
+Cross Site Scripting (XSS): 
+The Javascript code usually written in the input fields to force the website to run javascript
+
+Reflected XSS:
+Comes from the URL means that javscript is written into the url e.g https://insecure-website.com/status?message=<script>/*+Bad+stuff+here...+*/</script>
+<p>Status: <script>/* Bad stuff here... */</script></p>
+
+Stored XSS:
+Usually stored in the website database and can harm the user e.g if user sends the message and website is storing and tranferring these messages without sanitization then reciever may be affected.
+
+Preventions:
+Character Escapes
+
+content-security-policy in https header to tell the browser that only read the javascript from the js files and script tag, not from the inline javascript
+
+SQL Injection:- Trick to sql database
+
+Prevention: Prepared Statement meaning that database itself handle these things one of the example is if user add one ' then database close it by itself
+
+
+IAM Subdomain
+NIST Framework

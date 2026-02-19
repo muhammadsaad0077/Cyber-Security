@@ -1,0 +1,44 @@
+Port: 
+
+Port Number is a specific number used by the computer for the communication
+
+A port is like a door in the house. Each door leads to a specific room(service).
+
+like if we type google.com and search it, server see the port number 80.
+
+SSH - 22
+HTTPS - 443
+OK - 200
+Not found - 404
+
+
+Nmap tool: To find vulnerabilities in a network. 
+nmap -sn gatewayaddress/24
+nmap --script vuln 127.0.0.1
+
+
+Port Scanning: 
+Its a process of information gathering
+
+Which ports are open
+
+Which ports are closed / filtered
+
+Which services are listening
+
+Sometimes service versions
+
+Vulnerabilities come from:
+
+Outdated software
+
+Weak configurations
+
+Known CVEs
+
+Poor authentication
+
+Port scanning just reveals the attack surface.
+
+
+

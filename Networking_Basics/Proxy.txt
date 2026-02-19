@@ -1,0 +1,44 @@
+Proxy:
+
+It is a server/computer/software in the middle that monitor the traffic and then decide whether to format this packet to the destination or not
+
+
+Alice (send facebook.com)  -----   Proxy (it checks facebook.com is not allowed in my list so delete/drop that request)    ----- Bob
+
+
+Proxy:
+Advantages:
+
+Faster, less overhead.
+
+Easy setup, cost-effective.
+Use Cases:
+
+Bypass geo-restrictions.
+
+Low-latency tasks.
+
+
+VPN:
+Advantages:
+
+Comprehensive security.
+
+Overall privacy.
+Considerations:
+
+Slower due to encryption.
+
+More config, subscription cost.
+
+Choose Based On:
+
+Speed: Proxy for quick tasks, VPN for security.
+
+Use Cases: Proxy for specific, VPN for general.
+
+Ease: Proxy for simplicity, VPN for coverage.
+
+Cost: Proxy for budget, VPN for features.
+
+Compatibility: Proxy for apps, VPN for all.

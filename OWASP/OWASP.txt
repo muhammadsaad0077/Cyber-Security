@@ -1,0 +1,43 @@
+OWASP: List of most critical web application security risks published by OWASP ( Open Worldwide Application Security Project ). Its widely used
+by developers, security engineers and cybersecurity students 
+
+1- Broken Acces Control
+
+2- Security Misconfuguration
+Keeping your software open in terms of security, it can be in a way that you set default passwords, unauthorize access to anyone meaning that simple user can access admin role or view its data
+You did not setup cloud properly, Showing detailed error messages, Too much open ports, weak database security, test accounts not deleted
+
+3- Software Supply Chain
+Using prebuilt things like libraries, frameworks etc are called software supply chain.
+May be You install one npm package and internally it install 20 other npm package that may contain malware. Database, CI/CD you are using can be vulnerable
+
+Scan for Vulnerabilities Regularly
+
+Use tools like:
+
+OWASP Dependency Check
+
+Dependency Track
+
+SCA tools
+
+
+4- Cryptographic Failures
+using weak encryption methods, storing plain passwords, credit card, using http, not validating certificatess
+
+
+5- Injection
+not validating, sanitazing user inputs, can lead to exposure of database or server 
+
+6- Insecure design
+not planning the security control, also perfect coding can be useless if design is not well planned.
+
+If you build a bank app and:
+
+You never design rate limiting
+
+You never design anti-bot protection
+
+You never design fraud detection
+
+think like an attacker while designing this is called threat modeling
