@@ -41,3 +41,5 @@ You never design anti-bot protection
 You never design fraud detection
 
 think like an attacker while designing this is called threat modeling
+
+more yet to read
