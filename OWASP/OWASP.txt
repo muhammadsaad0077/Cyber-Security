@@ -42,4 +42,22 @@ You never design fraud detection
 
 think like an attacker while designing this is called threat modeling
 
-more yet to read
+
+7- Authentication failures
+not mainting the accurate login functionalitity, allowing default passwords, storing password in a plain text, weak hashing
+storing session id in url, not invalidating session id after logout, incorrect jwt tokens
+
+
+
+8- Software or data integrity failures
+using insecure third party package or service 
+
+A company uses an external service provider to provide support functionality. For convenience, it has a DNS mapping for myCompany.SupportProvider.com to support.myCompany.com. This means that all cookies, including authentication cookies, set on the myCompany.com domain will now be sent to the support provider. Anyone with access to the support provider’s infrastructure can steal the cookies of all of your users that have visited support.myCompany.com and perform a session hijacking attack.
+
+
+9- Security Logging and Alerting failures
+Not maintaining the proper logs, incomplete logs, exposing the log to the user
+
+
+10- Mishandling of exceptional conditions
+An exceptional condition is any unexpected situation that disrupts normal program flow.
