@@ -61,3 +61,5 @@ Not maintaining the proper logs, incomplete logs, exposing the log to the user
 
 10- Mishandling of exceptional conditions
 An exceptional condition is any unexpected situation that disrupts normal program flow.
+
+
