@@ -1,0 +1,15 @@
+Burp Suite
+
+Used for scaning web vulnerabilites
+
+Act as middleman between browser and server
+
+
+Intercept: If it is on then we can forward the request and recieve the response manually, seeing all the information sending while requestion and recieving while response
+
+Repeater: This tab allow a single request to sent again and again by doing modifications to see the server response/behaviour
+
+Intruder: It changes the specific value and put our provided values, helps in brute force attack, hacker's favourite
+
+Sniper attack: It is used when you want to test one parameter at a time, It is best used for
+SQL injection, XSS, command injection, parameter fuzzing
